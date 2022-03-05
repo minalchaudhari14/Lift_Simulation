@@ -1,0 +1,47 @@
+body{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.btn{
+    padding: 8px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 4px 6px;
+}
+
+.controller{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-container-main{
+ display: flex;
+ margin: 0 20px;
+}
+
+.add-btn{
+  background-color: #faebd7;
+  border: 2px black solid;
+  width: 9rem;
+  transition: all 0.1s;
+  padding: 5px;
+}
+
+.remove-btn{
+  background-color: #faebd7;
+  border: 2px black solid;
+  width: 9rem;
+  transition: all 0.1s;
+  padding: 5px;
+}
