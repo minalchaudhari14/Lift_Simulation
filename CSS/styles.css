@@ -6,6 +6,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.Header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 h1 {
   text-align: center;
@@ -14,7 +19,7 @@ h1 {
 .btn{
     padding: 8px;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 5px;
     margin: 4px 6px;
 }
 
@@ -31,7 +36,7 @@ h1 {
 }
 
 .add-btn{
-  background-color: #faebd7;
+  background-color: #F8F6F0;
   border: 2px black solid;
   width: 9rem;
   transition: all 0.1s;
@@ -39,9 +44,66 @@ h1 {
 }
 
 .remove-btn{
-  background-color: #faebd7;
+  background-color: #F8F6F0;
   border: 2px black solid;
   width: 9rem;
   transition: all 0.1s;
   padding: 5px;
+}
+
+.building {
+    position: relative;
+    width: 60vw;
+}
+
+.floor{
+  position: relative;
+  border-bottom: 4px solid ;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.btn-container
+{
+  margin-left: 4px;
+}
+
+.floor .floor-number {
+    position: absolute;
+    right: 0;
+    top: 8rem;
+    margin-right: 4px;
+}
+
+.up-btn {
+    background-color: #ECC5C0 ;
+    width: 4rem;
+}
+.down-btn {
+    background-color: #C0C0C0;
+    width: 4rem;
+}
+.elevator {
+    position: absolute;
+    left: 120px;
+    bottom: 7px;
+
+    background-color: black;
+
+    height: 5rem;
+    width: 3rem;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+.door {
+    width: 50%;
+    height: 100%;
+    background: #686A6C;
+    border: 2px solid #C0C0C0;
+    z-index: 2;
+    transition: width 2s linear;
 }
